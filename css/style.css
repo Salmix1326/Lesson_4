@@ -1,0 +1,255 @@
+/* ========== Обнуление ========== */
+
+@import "null.css";
+
+/* ========== Шрифты ========== */
+
+@import url('https://fonts.googleapis.com/css?family=Murecho:400,700,900&display=swap');
+
+@font-face {
+   font-family:'NeoTech';
+   src: url("../fonts/NeoTech.woff") format("woff"), url("../fonts/NeoTech.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family:'NeoTech';
+   src: url("../fonts/NeoTech-Medium.woff") format("woff"), url("../fonts/NeoTech-Medium.woff2") format("woff2");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family:'NeoTech';
+   src: url("../fonts/NeoTech-Black.woff") format("woff"), url("../fonts/NeoTech-Black.woff2") format("woff2");
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+/* ========== Стили шрифтов ========== */
+
+/* Напоминалка по стилям шрифтов ( собрал все шрифты, подключенные по-разному )
+ 
+ font-family: 'Lato', sans-serif; 400, 700, 900 
+ font-family: 'Neonderthaw', cursive; 400
+ font-family: 'Roboto', sans-serif; 100 italic, 300, 300 italic, 400, 400 italic, 500, 500 italic, 700, 700 italic, 900, 900 italic
+ font-family: 'Rubik Beastly', cursive; 400
+ font-family: 'Syne Tactile', cursive; 400
+ font-family: 'Murecho', cursive; 400
+ font-family: 'NeoTech', cursive; 400, 500, 900
+
+*/
+
+/* ========== Общие стили ========== */
+
+body {
+  font-family: 'Lato', sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+h1 {
+   color: blue;
+   font-size: 25px;
+   font-family: 'NeoTech', sans-serif, Arial, Helvetica;
+   font-weight: 900;
+   text-transform: uppercase;
+}
+
+h2 {
+   color: deeppink;
+   font-size: 20px;
+   font-family: 'Syne Tactile', sans-serif, Arial, Helvetica;
+   font-weight: 400;
+   text-decoration: underline;
+}
+
+h3 {
+   color: khaki;
+}
+
+h4 { 
+   color: seagreen;
+}
+
+ul {
+   color: greenyellow;
+}
+
+li {
+   color: lightskyblue;
+}
+
+p {
+   color: indianred;
+   text-decoration: lowercase;
+}
+
+a {
+   color: red;
+}
+
+mark {
+   color: fuchsia;
+}
+
+ul li  {
+   color: gray;
+   font-family: 'Roboto', sans-serif, Arial, Helvetica;
+   font-weight: 900;
+}
+
+.buttontosite {
+   text-transform: uppercase;
+   font-family: 'Roboto', Arial, sans-serif;
+   font-weight: 900;
+   text-decoration: underline;
+}
+
+/* ========== Меню и континент ========== */
+
+.nav1 {
+   color: lime;
+}
+
+.nav1.nav-number2 {
+   color: orange;
+}
+
+.nav1.nav-number3 {
+   color: mediumblue;
+}
+
+.nav1.nav-number4 {
+   color: mediumslateblue;
+}
+
+.nav1.nav-number5 {
+   color: mediumturquoise;
+   text-decoration: line-through;
+}
+
+.main-characters {
+   color: crimson;
+}
+
+.continent {
+   text-align: center;
+}
+
+.continent p {
+   color: midnightblue;
+   text-align: left;
+   font-family: 'Murecho', sans-serif, Arial, Helvetica;
+   font-weight: 400;
+   text-indent: 15px;
+   word-spacing: 15px;
+   line-height: 2;
+}
+
+/* ========== Главные персонажи ========== */
+
+.main-characters-title.title {
+   color: lightpink;
+}
+
+.character-title {
+   color: lightgreen;
+}
+
+.main-characters > h2 {
+   color: lightgreen;
+}
+
+.main-characters-title ~ h2 {
+   color: coral;
+
+}
+
+.character-about {
+   text-indent: 25px;
+   text-align: left;
+   letter-spacing: 5px;
+   line-height: 3;
+}
+
+[class*="character"] {
+   color: navy;
+   text-align: center;
+}
+
+[class$="-about"] {
+   color: navy;
+   text-align: left;
+   text-indent: 20px;
+   text-shadow: 5px 5px 5px #000
+}
+
+/* ========== Фракции ========== */
+
+.factions {
+   text-align: center;
+}
+
+.faction-title {
+   color: lime;
+   font-size: 20px;
+   text-decoration: underline;
+}
+
+.faction-about p {
+   text-align: left;
+   text-indent: 20px;
+   line-height: 4;
+   
+}
+
+.faction-main-title {
+   font-size: 30px;
+}
+
+/* ========== Мир Ведьмака ========== */
+
+.main-title + h4 {
+   color: royalblue;
+}
+
+.world-of-witcher > ul > li {
+   color: indigo;
+   font-size: 20px;
+   text-decoration: overline;
+}
+
+.about.world {
+   color: violet;
+}
+
+[class$="-number"] {
+   color: darkgreen;
+}
+
+/* ========== Сериал ========== */
+
+[class*="movie"] {
+   text-align: center;
+}
+
+.movie-title {
+   font-size: 30px;
+   font-family: 'Lato', Arial, Helvetica, sans-serif;
+   font-weight: 900;
+   text-decoration: line-through;
+}
+
+.movie-about {
+   color: magenta;
+}
+
+/* ========== Подвал ========== */
+
+.footer {
+   text-align: center;
+}
